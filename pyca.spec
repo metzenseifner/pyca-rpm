@@ -17,7 +17,7 @@ BuildArch:      noarch
 
 BuildRequires:  python3-devel
 BuildRequires:  npm
-BuildRequires:  g++
+BuildRequires:  gcc-c++
 
 Requires:       %{py3_dist gunicorn}
 Requires:       %{py3_dist pycurl}
