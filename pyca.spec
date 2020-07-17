@@ -137,7 +137,7 @@ fi
 
 %files
 %license license.lgpl
-%doc readme.rst
+%doc README.rst
 %config(noreplace) %dir %{_sysconfdir}/%{srcname}
 %config(noreplace) %{_sysconfdir}/%{srcname}/gunicorn.conf.py
 %config(noreplace) %attr(600,%{uid},%{gid}) %{_sysconfdir}/%{srcname}/%{srcname}.conf
