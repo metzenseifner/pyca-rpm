@@ -5,8 +5,8 @@
 %define ngid  8967
 
 Name:           %{srcname}
-Version:        3.1
-Release:        2%{?dist}
+Version:        3.2
+Release:        1%{?dist}
 Summary:        Python Capture Agent for Opencast
 
 License:        LGPL
@@ -149,5 +149,8 @@ fi
 
 
 %changelog
+* Sat Jul 18 2020 Lars Kiesow <lkiesow@uos.de> - 3.2-1
+- Update to pyCA 3.2
+
 * Sun Jun 21 2020 Lars Kiesow <lkiesow@uos.de> - 3.1-2
 - Initial build
