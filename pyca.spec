@@ -34,6 +34,7 @@ BuildRequires: %{py3_dist configobj}
 BuildRequires: %{py3_dist sqlalchemy}
 BuildRequires: %{py3_dist sdnotify}
 BuildRequires: %{py3_dist flask}
+BuildRequires: %{py3_dist psutil}
 
 BuildRequires:     systemd
 Requires(post):    systemd
@@ -85,7 +86,7 @@ sed -i 's!#preview_dir *=.*$!#preview_dir = %{_sharedstatedir}/pyca/recordings!'
    %{buildroot}%{_sysconfdir}/pyca/pyca.conf
 
 %check
-%{__python3} setup.py test
+%{__python3} -m unittest discover -s tests
 rm -r %{buildroot}%{python3_sitelib}/tests
 
 
