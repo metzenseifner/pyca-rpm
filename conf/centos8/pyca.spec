@@ -6,7 +6,7 @@
 
 Name:           %{srcname}
 Version:        4.1
-Release:        1%{?dist}
+Release:        2%{?dist}
 Summary:        Python Capture Agent for Opencast
 
 License:        LGPL
@@ -152,6 +152,9 @@ fi
 
 
 %changelog
+* Sun Mar 16 2021 Jonathan L. Komar <jonathan.komar@uibk.ac.at> - 4.1-2
+- Modified for CentOS8, albeit quick using pip for missing packages
+
 * Tue Mar 02 2021 Lars Kiesow <lkiesow@uos.de> - 4.1-1
 - Update to pyCA 4.1
 
