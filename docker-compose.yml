@@ -1,0 +1,6 @@
+version: '3'
+services:
+  centos8:
+    build: conf/centos8/
+    volumes:
+      - .:/base
